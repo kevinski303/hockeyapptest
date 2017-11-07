@@ -1,7 +1,27 @@
-<script>
-  $(function(){
-    $("#includeRink").load("htm/rink.html");
-  });
-</script>
-<!--Content-->
-<div id="includeRink"></div>
+<div class="container-fluid no-padding">
+    <script>
+      document.getElementById("hockeyrink").addEventListener("click", printMousePos);
+        function printMousePos(event) {
+        var $pos = "X: " + event.clientX + " Y: " + event.clientY;
+        console.log($pos);
+        document.getElementById("torpos").value = $pos;
+        }
+    </script>
+  <div id="hockeyrink">
+  <img src="img/icehockeylayout.svg" class="img-responsive" alt="Responsive image" width="100%">
+  </div>
+  <div class="container-fluid"><hr></div>
+  <div class="container-fluid">
+    <form class="form-inline" id="tordaten">
+        <div class="form-group">
+            <label class="sr-only" for="pos">Position</label>
+            <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="torpos" placeholder="Auf Eisfläche Klicken">
+        </div>
+        <div class="form-group mx-sm-3">
+          <label class="sr-only" for="spielernr" >Rückennummer</label>
+          <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="spielernr" placeholder="Rückennummer">
+        </div>
+        <button type="submit" class="btn btn-primary">Daten Speichern</button>
+    </form>
+  </div>
+</div>
