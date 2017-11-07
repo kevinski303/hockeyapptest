@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Eishockey Team Statistik</title>
+    <title>TeamStats</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -30,11 +30,17 @@
     <![endif]-->
     <script language="javascript">
       $(document).ready(function(){
-        $('#home').click(function(){
-          $('#content').load('htm/home.html');
-        })
         $('#tor').click(function(){
           $('#content').load('htm/tor.html');
+        })
+        $('#eis').click(function(){
+          $('#content').load('htm/eis.html');
+        })
+        $('#stat').click(function(){
+          $('#content').load('htm/stat.html');
+        })
+        $('#conf').click(function(){
+          $('#content').load('htm/conf.html');
         })
       });
     </script>
@@ -53,12 +59,11 @@
               <a class="navbar-brand" href="">Version 0.1</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav" id="navUl">
-                <li id="home"><a>Home</a></li>
+              <ul class="nav navbar-nav">
                 <li id="tor"><a>Tor Erfassen</a></li>
-                <li><a>$eiszeit Erfasse</a></li>
-                <li><a>$statistik &amp; report</a></li>
-                <li><a>$einstellung</a></li>
+                <li id="eis"><a>Eiszeit Erfassn</a></li>
+                <li id="stat"><a>Statistiken</a></li>
+                <li id="conf"><a>Einstellungen</a></li>
               </ul>
             </div><!--/.nav-collapse-->
           </div>
@@ -66,7 +71,19 @@
       
       <!--Content-->
       <div class="container-fluid">
-        <div id="content">
+        <div id="content"> <!--replacing on click-->
+            <div class="container-fluid">
+                <div class="jumbotron">
+                    <div class="container">
+                        <h3>HC Chnebler Jungs</h3>
+                        <h4>{LOGIN FORM}</h4>
+                        <!--<p><a class="btn btn-primary btn-lg" href="https://github.com/kevinski303" role="button">Online Dokumentation</a></p>-->
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+              <img src="img/hockeyplayer.jpg" class="img-responsive" alt="Responsive image">
+            </div>
         </div>
       </div>
   </body>
