@@ -11,3 +11,10 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+#goalIcon {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    transition: left .5s ease-in, top .5s ease-in;
+}
