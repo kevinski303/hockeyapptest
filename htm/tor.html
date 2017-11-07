@@ -10,18 +10,11 @@
   <img id="hockeyrink"src="img/icehockeylayout.svg" class="img-responsive" alt="Responsive image" width="100%">
 </div>
 <hr>
-<form class="form-inline" id="torDaten">
+<form class="form-inline" id="tordaten">
   <div class="form-group">
-    <label class="sr-only" for="torPosition">Position</label>
-    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="torPosition" placeholder="Auf Eisfläche Klicken">
+    <input type="text" id="torposition" class="form-control" placeholder="Tor Position (Eisfläche)">
+    <input type="text" id="spielernummer" class="form-control" placeholder="Rückennummer (99)">
+    <input type="text" id="spielzeit"class="form-control" placeholder="Spielzeit (mm:ss)">
   </div>
-  <div class="form-group">
-    <label class="sr-only" for="torSpielernr" >Rückennummer</label>
-    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="torSpielernr" placeholder="Rückennummer">
-  </div>
-  <div class="form-group">
-    <label class="sr-only" for="torSpielzeit" >Rückennummer</label>
-    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="torSpielzeit" placeholder="Spielzeit in min:sek">
-    </div>
   <button type="submit" class="btn btn-primary">Daten Speichern</button>
 </form>
