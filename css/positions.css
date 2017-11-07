@@ -1,0 +1,8 @@
+#vl {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    width: 50%;
+    height: 50%;
+    border: 3px solid rgb(255, 196, 0);
+}

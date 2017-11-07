@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #D1D2D3;
+  }
+  
+  body > div {
+    margin: 20px auto;
+  }
+  
+  .middle {
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    background: #120930;
+    display: block;
+  }
+    
+  #hockey {
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 100px;
+    width: 1200px;
+    height: 600px;
+    background: -webkit-radial-gradient(circle, #0000ff 0px, #0000ff 8px, #ffffff 10px, #ffffff 80px, #f00 80px, #f00 83px, transparent 13px) 0px, 0px, -webkit-linear-gradient(left, #FFF 0%, #FFF 5.3%, #F00 5.3%, #F00 5.5%, #FFF 5.5%, #FFF 33.5%, #00F 33.5%, #00F 34%, #FFF 34%, #FFF 49.75%, #F00 49.75%, #F00 50.25%, #FFF 50.25%, #FFF 66%, #00F 66%, #00F 66.5%, #FFF 63.7%, #FFF 94.3%, #F00 94.3%, #F00 94.5%, #FFF 94.5%, #FFF 100%);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 55px #000;
+  }
+  
+  #hockey::after {
+    background: #FFF;
+    border: 3px solid #F00;
+    border-radius: 0 10px 10px 0;
+    width: 7.4%;
+    height: 10.81%;
+    position: absolute;
+    top: 44.78%;
+    left: 10.4%;
+    display: block;
+  }
+  
+  #hockey::before {
+    content: '';
+    border: 3px solid #F00;
+    border-radius: 50%;
+    width: 8.3%;
+    height: 19%;
+    position: absolute;
+    bottom: -11%;
+    left: 50%;
+    display: block;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  
+  #hockey .zone {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  /*#hockey .zone::before,
+  #hockey .zone::after {
+    content: '';
+    display: block;
+    width: 11.5%;
+    height: 0.85%;
+    background: #F00;
+    position: absolute;
+    top: 40%;
+    left: -0.5%;
+    -webkit-transform: rotate(20deg);
+  }*/
+  
+  #hockey .zone::after {
+    top: 60%;
+    height: 0.65%;
+    transform: rotate(-20deg);
+  }
+  
+  #hockey .crease {
+    /*content: '';*/
+    
+    background: #c6ebff;
+    border: 3px solid #F00;
+    border-radius: 0 50px 50px 0;
+    width: 7.4%;
+    height: 10.81%;
+    position: absolute;
+    top: 44.78%;
+    left: 10.4%;
+    display: block;
+  }
+  
+  #hockey .crease::before,
+  #hockey .crease::after {
+    content: '';
+    display: block;
+    background: #F00;
+    border-radius: 70%;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: -130px;
+    right: -335px;
+  }
+  
+  #hockey .crease::after {
+    top: 175px;
+  }
+  
+  #hockey .circle {
+    border-radius: 50%;
+    border: 3px solid #F00;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+  }
+  
+  #hockey .circle.inside {
+    top: 75px;
+    left: 18%;
+    background: -webkit-radial-gradient(circle, #F00, #F00 5px, transparent 5px), -webkit-linear-gradient(top, #FFF 0, #FFF 53px, transparent 53px, transparent 68px, #FFF 68.5px, #FFF 76.5px, transparent 77px, transparent 92px, #FFF 92px) 0 0, -webkit-linear-gradient(left, #FFF 0, #FFF 48px, transparent 48px, transparent 62px, #F00 62px, #F00 65px, #FFF 65px, #FFF 79px, #F00 79px, #F00 82px, transparent 80px, transparent 97px, #FFF 97px) 0 0, -webkit-linear-gradient(top, transparent 3px, #F00 3px, #F00 7px, transparent 6px, transparent 15px, #F00 15px, #F00 18px, transparent 18px) 0 62px, #FFF;
+  }
+  
+  #hockey .circle.inside::before,
+  #hockey .circle.inside::after {
+    content: '';
+    width: 18px;
+    height: 13px;
+    position: absolute;
+    top: -13px;
+    left: 44%;
+    background: -webkit-linear-gradient(left, #F00 0, #F00 3px, transparent 3px, transparent 15px, #F00 15px) 0 0;
+  }
+  
+  #hockey .circle.inside::after {
+    top: auto;
+    bottom: -13px;
+  }
+  
+  #hockey .circle.inside:last-child {
+    top: auto;
+    bottom: 68px;
+  }
+  
+  #hockey .right {
+    transform: rotate(180deg) translateX(-100%);
+  }
+  
+  #hockey .right .crease {
+    left: 11%;
+  }
+  
