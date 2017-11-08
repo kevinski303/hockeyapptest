@@ -1,0 +1,44 @@
+body {
+  background-color: #448aff;
+}
+
+h2 {
+  text-align: center;
+  font-size: 5em;
+  transition: all 0.5s;
+}
+h2 span {
+  font-size: 0.6em;
+}
+
+.change-color {
+  color: #005ecb;
+  font-size: 5em;
+}
+
+.button-group {
+  text-align: center;
+}
+.button-group button {
+  margin: 5px;
+}
+
+.form-inline .form-control {
+  width: 15%;
+  display: inline-block;
+}
+
+.form-align {
+  text-align: center;
+}
+
+.middle-screen {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
